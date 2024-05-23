@@ -1,0 +1,8 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+for i,v in game.Players.LocalPlayer:GetAttributes() do
+    if type(v) ~= "boolean" then
+        game.Players.LocalPlayer:SetAttribute(i, tonumber(math.huge))
+    end
+end
